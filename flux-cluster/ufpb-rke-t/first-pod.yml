@@ -7,10 +7,8 @@ metadata:
   namespace: default
 spec:
   containers:
-  - args:
-    - primeiro-flux
     image: nginx
-    name: pods
+    name: primeiro-flux
     ports:
     - containerPort: 80
     resources: {}
