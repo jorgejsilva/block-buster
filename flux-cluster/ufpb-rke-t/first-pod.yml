@@ -2,12 +2,11 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    run: pods
-  name: pods
-  namespace: default
+    run: primeiro-flux
+  name: primeiro-flux
 spec:
   containers:
-    image: nginx
+  - image: nginx
     name: primeiro-flux
     ports:
     - containerPort: 80
