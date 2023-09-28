@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: pods
+  name: pods
+spec:
+  containers:
+  - args:
+    - primeiro-flux
+    image: nginx
+    name: pods
+    ports:
+    - containerPort: 80
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
