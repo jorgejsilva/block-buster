@@ -4,6 +4,7 @@ metadata:
   labels:
     run: primeiro-flux
   name: primeiro-flux
+  namespace: default
 spec:
   containers:
   - image: nginx
