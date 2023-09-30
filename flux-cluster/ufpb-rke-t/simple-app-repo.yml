@@ -8,4 +8,6 @@ spec:
   interval: 1m0s
   ref:
     branch: master
-  url: https://github.com/jorgejsilva/sample-app-deployment.git
+  secretRef:
+    name: 8-demo-git-bb-app-auth
+  url: ssh://github.com/jorgejsilva/sample-app-deployment.git
